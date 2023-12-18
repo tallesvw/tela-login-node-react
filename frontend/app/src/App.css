@@ -3,6 +3,11 @@ body {
   font-size: 1.6rem;
   font-family: "Open Sans", sans-serif;
   color: #2b3e51;
+  margin: 0; /* Reset default margin */
+  display: flex;
+  align-items: center; /* Vertical centering */
+  justify-content: center; /* Horizontal centering */
+  height: 100vh; /* 100% viewport height */
 }
 
 h2 {
@@ -18,7 +23,9 @@ a:active {
   -webkit-transition: all 0.2s ease;
   transition: all 0.2s ease;
 }
-a:focus, a:hover,
+
+a:focus,
+a:hover,
 a:link:focus,
 a:link:hover,
 a:visited:focus,
@@ -34,11 +41,11 @@ a:active:hover {
   background-color: #fff;
   width: 70%;
   max-width: 400px;
-  margin: 30px auto;
   text-align: center;
   padding: 20px 0 0 0;
   border-radius: 4px;
   box-shadow: 0px 30px 50px 0px rgba(0, 0, 0, 0.2);
+  margin: 30px auto; /* Center the form horizontally */
 }
 
 .login-form {
@@ -65,12 +72,13 @@ input[type="email"] {
   font-style: normal;
   font-size: 16px;
   -webkit-appearance: none;
-     -moz-appearance: none;
-          appearance: none;
+  -moz-appearance: none;
+  appearance: none;
   position: relative;
   display: inline-block;
   background: none;
 }
+
 input[type="password"]:focus,
 input[type="email"]:focus {
   border-color: #3ca9e2;
@@ -96,6 +104,7 @@ input[type="email"]:focus {
   width: 100%;
   padding: 20px;
 }
+
 .btn-login:hover {
   background-color: #329dd5;
   -webkit-transition: all 0.2s ease;
